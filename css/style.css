@@ -282,33 +282,20 @@ footer {
 
 @media (max-width: 768px) {
 
-  /* NAVBAR mobile fix */
   .nav-container {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
   }
 
   .nav-links {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;       /* sigue horizontal */
+    flex-wrap: wrap;           /* se ajusta al ancho */
+    justify-content: center;
     gap: 0.8rem;
-    width: 100%;
-  }
-
-  .nav-links li {
-    width: 100%;
-    text-align: center;
   }
 
   .nav-links a {
-    display: block;
-    width: 100%;
-    padding: 0.4rem 0;
-    white-space: normal; /* evita cortes raros */
+    font-size: 0.95rem;        /* un poco más pequeño */
+    white-space: nowrap;       /* evita cortes */
   }
 }
-
-  
-
-
